@@ -42,8 +42,8 @@ class TimeAPITests: XCTestCase {
     func testTimeData() throws {
         let testData = try XCTUnwrap(TimeData.testDataString.data(using: .utf8))
         let results = try JSONDecoder().decode(TimeData.self, from: testData).results
-        XCTAssertEqual(results.sunrise, expectedSunrise)
-        XCTAssertEqual(results.sunset, expectedSunset)
+        XCTAssertEqual(results.sunrise, MockConstants.sunrise)
+        XCTAssertEqual(results.sunset, MockConstants.sunset)
     }
 
     func testTimeDataWithInvalidNullValue() throws {
