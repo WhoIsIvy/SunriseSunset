@@ -6,3 +6,7 @@ Uses URLSession and a mock URLProtocol for unit tests.
 <br>
 <br>
 An API Key from openweathermap.org is required.
+<br>
+<br>
+Copyright (C) 2023 Lisa Fellows
+LifeAffirmations cannot be copied and/or distributed without express permission.
