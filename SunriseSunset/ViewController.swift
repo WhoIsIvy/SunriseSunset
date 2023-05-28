@@ -107,7 +107,6 @@ class ViewController: UIViewController {
     }
 
     private func setupView() {
-        view.backgroundColor = .white
         backgroundImageView.image = UIImage(named: viewModel.backgroundImage)
 
         sunriseLabel.attributedText = viewModel.sunriseTitle

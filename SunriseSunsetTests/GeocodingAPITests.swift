@@ -9,7 +9,6 @@ import XCTest
 @testable import SunriseSunset
 
 class GeocodingAPITests: XCTestCase {
-
     func testGeoDataDecoding() throws {
         let testData = try XCTUnwrap(GeoData.testDataString.data(using: .utf8))
         let results = try JSONDecoder().decode(GeoData.self, from: testData)

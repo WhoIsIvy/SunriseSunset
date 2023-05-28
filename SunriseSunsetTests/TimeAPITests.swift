@@ -9,10 +9,6 @@ import XCTest
 @testable import SunriseSunset
 
 class TimeAPITests: XCTestCase {
-
-    private let expectedSunrise = "08:00:00 AM"
-    private let expectedSunset = "08:00:00 PM"
-
     func testTimeResultsDecoding() throws {
         let testData = try XCTUnwrap(TimeResults.testDataString.data(using: .utf8))
         let results = try JSONDecoder().decode(TimeResults.self, from: testData)
